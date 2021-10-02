@@ -13,7 +13,7 @@
         android:layout_height="250dp"
         android:background="#efefef"
         android:textSize="48sp"
-        android:maxLength="12"/>
+        android:maxLength="12" />
 
     <!--Row One-->
     <LinearLayout
