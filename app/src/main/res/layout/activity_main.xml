@@ -163,7 +163,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
-            android:onClick="onDigit"
+            android:onClick="onPoint"
             android:layout_margin="2dp"/>
         <Button
             android:id="@+id/btnZero"
@@ -179,7 +179,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="CLR"
-            android:onClick="onDigit"
+            android:onClick="onCLR"
             android:layout_margin="2dp"/>
         <Button
             android:id="@+id/btnAdd"
@@ -191,6 +191,8 @@
             android:layout_margin="2dp"/>
 
     </LinearLayout>
+
+    <!--Row Five-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
