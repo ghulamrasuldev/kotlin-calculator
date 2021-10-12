@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvInput).text = ""
         lastNumeric = false
         lastDot = false
+
     }
 
     fun onPoint(view: View){
