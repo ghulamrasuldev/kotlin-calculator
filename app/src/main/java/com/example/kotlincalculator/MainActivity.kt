@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +34,22 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tvInput).append((view as Button).text)
             lastNumeric = false
             lastDot = true
+        }
+    }
+
+    fun isOperator(view: View){
+        if (lastNumeric && isOperatorAdded(findViewById<TextView>(R.id.tvInput).text.toString())){
+            findViewById<TextView>(R.id.tvInput).append((view as Button).text)
+            lastDot = false
+            lastNumeric = false
+        }
+    }
+    private fun isOperatorAdded (value: String): Boolean {
+        return if (value.startsWith("-")) {
+            false
+        }
+        else {
+            value.contains("+") || value.contains("/") || value.contains("+")
         }
     }
 }
