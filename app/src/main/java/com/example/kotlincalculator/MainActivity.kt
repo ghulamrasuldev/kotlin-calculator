@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onOperator(view: View){
-        if (lastNumeric && isOperatorAdded(findViewById<TextView>(R.id.tvInput).text.toString())){
+        if (lastNumeric && !isOperatorAdded(findViewById<TextView>(R.id.tvInput).text.toString())){
             findViewById<TextView>(R.id.tvInput).append((view as Button).text)
             lastDot = false
             lastNumeric = false
